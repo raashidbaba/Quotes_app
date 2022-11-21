@@ -1,4 +1,10 @@
 package com.example.affirmationapp.model
 
-data class Affirmation(val stringResource : Int) {
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+// adding annotations to avoid wrong calls.
+data class Affirmation(
+    @StringRes val stringResource : Int,
+    @DrawableRes val ImageResourceId : Int) {
 }
